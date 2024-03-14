@@ -1,38 +1,231 @@
-.App {
-  text-align: center;
+/* Styles for the main container */
+.main-container {
+  display: flex;
+  flex-direction: row;
+  background-image: url("https://res.cloudinary.com/dvwnbhpcy/image/upload/v1710435804/360_F_296918383_8Afwlw4Ze4tmhvB9WgkJQGq33k4Dntgm_fiqxcw.jpg");
+  height: 100vh;
+  padding: 55px;
+  background-size: cover;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Styles for the main content of Mobishaala */
+.mobishaala-text-content {
+  display: flex;
+  flex-direction: column;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Styles for the main heading */
+.main-heading {
+  font-family: "arial";
+  font-weight: 900;
+  font-style: italic;
+  color: white;
+  margin-bottom: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Styles for the main paragraph */
+.paragraph {
+  font-family: "Arial";
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+/* Styles for the styled text within the paragraph */
+.styled-text {
+  color: yellow;
+}
+
+/* Styles for the unordered list text */
+.unordered-list-text {
+  list-style-type: circle;
+  color: white;
+  font-family: "arial";
+  font-weight: 500;
+  padding-left: 6px;
+}
+
+/* Styles for list items */
+li {
+  margin: 10px;
+}
+
+/* Styles for sub-paragraph */
+.sub-paragraph {
+  font-family: "arial";
+  color: white;
+  margin-bottom: 2px;
+  font-size: 14px;
+}
+
+/* Styles for button elements */
+.button-element {
+  color: white;
+  font-family: "Arial";
+  font-weight: 500;
+  width: 106px;
+  padding: 8px;
+  background-color: red;
+  border-radius: 5px;
+  border: 0px none;
+  outline: none;
+  cursor: pointer;
+}
+
+/* Styles for talk to us container */
+.talk-to-us-container {
+  background-color: rgb(13, 181, 13);
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border: 0px none;
+  border-radius: 4px;
+  width: 106px;
+  outline: none;
+  cursor: pointer;
+  padding-left: 0px;
+  margin-top: 20px;
+}
+
+/* Styles for whatsapp symbol */
+.whatsapp-symbol {
+  height: 20px;
+  margin-right: 0px;
+}
+
+/* Styles for mobile devices video content */
+.mobile-devices-mobishaala-video-content {
+  display: none;
+}
+
+/* Styles for Mobishaala video content */
+.mobishaala-video-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 50px;
+  margin-left: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+/* Styles for video container */
+.video-container {
+  height: 260px;
+  width: 480px;
+  margin-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Styles for button video element */
+.button-video-element {
+  text-align: center;
+}
+
+/* Styles for additional information of Mobishaala */
+.mobishaala-additional-information {
+  display: none;
+}
+
+/* Media query for screen width less than 768px (Mobile Devices) */
+@media screen and (max-width: 768px) {
+  /* Styles for main container */
+  .main-container {
+    flex-direction: column;
+    padding: 10px;
+    padding-right: 16px;
+    padding-left: 16px;
   }
-  to {
-    transform: rotate(360deg);
+
+  /* Hide main heading */
+  .main-heading {
+    display: none;
+  }
+
+  /* Increase paragraph font size */
+  .paragraph {
+    font-size: 20px;
+  }
+
+  /* Adjust button element font size and width */
+  .button-element {
+    font-size: 16px;
+    width: 120px;
+  }
+
+  /* Hide unordered list text */
+  .unordered-list-text {
+    display: none;
+  }
+
+  /* Display mobile devices video content */
+  .mobile-devices-mobishaala-video-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Adjust video container width */
+  .video-container {
+    width: 125%;
+  }
+
+  /* Align mobishaala text content */
+  .mobishaala-text-content {
+    align-items: center;
+  }
+
+  /* Adjust sub-paragraph font size and padding */
+  .sub-paragraph {
+    padding-bottom: 14px;
+    font-size: 18px;
+  }
+
+  /* Adjust talk to us container font size and width */
+  .talk-to-us-container {
+    font-size: 18px;
+    width: 130px;
+    margin-top: 30px;
+  }
+
+  /* Hide Mobishaala video content */
+  .mobishaala-video-content {
+    display: none;
+  }
+
+  /* Styles for additional information of Mobishaala */
+  .mobishaala-additional-information {
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  /* Styles for mobile device main heading */
+  .mobile-device-main-heading {
+    font-family: "arial";
+    font-weight: 900;
+    font-style: italic;
+    color: white;
+    margin-bottom: 10px;
+  }
+
+  /* Styles for objectives */
+  .objectives {
+    color: white;
+    font-family: "arial";
+    font-weight: 700;
+    margin-bottom: 0px;
+  }
+
+  /* Styles for paragraph text */
+  .paragraph-text {
+    color: white;
+    font-family: "arial";
+    font-weight: 500;
+  }
+
+  /* Styles for sub headings */
+  .sub-headings {
+    color: white;
+    font-family: "arial";
   }
 }
